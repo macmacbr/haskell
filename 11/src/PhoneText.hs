@@ -22,8 +22,8 @@ key6 = Key {digit = '6', symbols = "MNO6"}
 key7 = Key {digit = '7', symbols = "PQRS7"} 
 key8 = Key {digit = '8', symbols = "TUV8"} 
 key9 = Key {digit = '9', symbols = "WXYZ9"} 
-keyStar = Key {digit = '*', symbols = "^*"}  -- ^ means uppercase
-key0 = Key {digit = '0', symbols = "+ _0"}   -- space bar included 
+keyStar = Key {digit = '*', symbols = "^*"}  {-  ^ means uppercase -}
+key0 = Key {digit = '0', symbols = "+ _0"}   {- space bar included -} 
 keyFlat = Key {digit = '#', symbols = ".,#"}
 
 myPhone :: DaPhone
