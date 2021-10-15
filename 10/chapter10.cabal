@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.33.0.
+-- This file has been generated from package.yaml by hpack version 0.34.4.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 6bb06b82800773faadee523f1f0d46ed279c040041e566371fb3d3e54089f584
+-- hash: 9fde68124ae908c39fd04f66195c4bd5fa59cbbaabd9120bdc48c283184466bd
 
 name:           chapter10
 version:        0.1.0.0
@@ -27,6 +27,7 @@ source-repository head
 
 library
   exposed-modules:
+      Cypher
       DataBase
       Exercises
       Lib
@@ -59,6 +60,7 @@ test-suite chapter10-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      CypherSpec
       DataBaseSpec
       ExercisesSpec
       LibSpec

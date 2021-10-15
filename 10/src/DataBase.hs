@@ -64,13 +64,13 @@ avgDb1 :: [DatabaseItem]
   -> Double  
 avgDb1 db = (mr . sumDb) db
   where
-    mr s = fromIntegral(s) / fromIntegral(length(filterDbNumber db))
+    mr s = fromIntegral s / fromIntegral(length(filterDbNumber db))
 
 -- AVG, single pass
 avgDb :: [DatabaseItem]
   -> Double
 avgDb = mr . filterDbNumber
           where
-            upAvg x (av,n) = ((av * n + fromIntegral(x)) / (n+1), n+1)
+            upAvg x (av,n) = ((av * n + fromIntegral x) / (n+1), n+1)
             mr [] = undefined
             mr xs = fst $ foldr upAvg (0.0, 0.0) xs
