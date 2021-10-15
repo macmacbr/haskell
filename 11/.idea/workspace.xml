@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5450b612-e103-4a49-9f08-8071fba664e0" name="Default Changelist" comment="">
+    <list default="true" id="5450b612-e103-4a49-9f08-8071fba664e0" name="Default Changelist" comment="package upgrade">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter11.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chapter11.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/stack.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack.yaml.lock" beforeDir="false" afterPath="$PROJECT_DIR$/stack.yaml.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PhoneText.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoneText.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/PhoneTextSpec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/PhoneTextSpec.hs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +47,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../intellij-haskell/build.sbt" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -68,6 +68,14 @@
       <option name="presentableId" value="Default" />
       <updated>1631586048224</updated>
     </task>
+    <task id="LOCAL-00001" summary="package upgrade">
+      <created>1634296678242</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1634296678242</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -81,5 +89,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="package upgrade" />
+    <option name="LAST_COMMIT_MESSAGE" value="package upgrade" />
   </component>
 </project>
