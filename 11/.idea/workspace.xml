@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5450b612-e103-4a49-9f08-8071fba664e0" name="Default Changelist" comment="package upgrade">
+    <list default="true" id="5450b612-e103-4a49-9f08-8071fba664e0" name="Default Changelist" comment="chapter11 - phonetapping">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/app/Main.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cypher.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cypher.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PhoneText.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoneText.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SubSequence.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SubSequence.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/PhoneTextSpec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/PhoneTextSpec.hs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634296678242</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="chapter11 - phonetapping">
+      <created>1634300479736</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1634300479736</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -92,6 +102,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="package upgrade" />
-    <option name="LAST_COMMIT_MESSAGE" value="package upgrade" />
+    <MESSAGE value="chapter11 - phonetapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="chapter11 - phonetapping" />
   </component>
 </project>

@@ -1,3 +1,5 @@
+{-# LANGUAGE TupleSections #-}
+
 module PhoneText where
 
 import Data.Char (isUpper, toUpper)
@@ -91,3 +93,25 @@ reverseTaps dp c = findDigits (isUpper c) (toUpper c)
               findDigits False uc = findDigitAndPresses dp uc 
 
 
+cellPhonesDead :: DaPhone
+         -> String
+         -> [(Digit, Presses)]
+cellPhonesDead dp = concatMap (reverseTaps dp)
+
+fingerTaps :: [(Digit, Presses)] -> Presses
+fingerTaps = foldr (\(_, p) a -> a + p ) 0 
+
+countSingleLetter :: Char -> String -> (Char, Int)
+countSingleLetter c str = (c, length(filter(\a -> toUpper a == c) str))
+
+countLetters :: String -> [(Char, Int)]
+countLetters text = map (`countSingleLetter` text) ['A'..'Z']
+
+getMax :: [(a, Int)] -> Maybe a
+getMax [] = Nothing
+getMax ((a1, i) : as1) = gs a1 i as1 
+    where gs c _ [] = Just c
+          gs c m ((aa,n ): as) = if n > m then gs aa n as else gs c m as 
+
+mostPopularLetter :: String -> Maybe Char
+mostPopularLetter = getMax . countLetters

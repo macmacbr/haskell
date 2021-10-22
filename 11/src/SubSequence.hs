@@ -5,5 +5,5 @@ isSubseqOf :: (Eq a) => [a] -> [a] -> Bool
 isSubseqOf key text = aux (key, text) 
    where 
      aux ([], _) = True
-     aux (k:_, []) = False 
+     aux (_, []) = False 
      aux (kf@(k:ks), t:ts) = if k == t then aux (ks, ts) else aux (kf, ts)
