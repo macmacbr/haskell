@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 8fd92a076ba9f3f7aab28812f7ea969aaad1ee247fb09d63f487e712bc17a814
+-- hash: f9c7dc0238439ff97631b9543e9e9047af1de2d1fc2dbeb154c5143cad6116a3
 
 name:           chapter11
 version:        0.1.0.0
@@ -29,6 +29,7 @@ library
   exposed-modules:
       Capitalize
       Cypher
+      HuttonRazor
       Lib
       PhoneText
       SubSequence
@@ -58,6 +59,7 @@ test-suite chapter11-test
   other-modules:
       CapitalizeSpec
       CypherSpec
+      HuttonRazorSpec
       PhoneTextSpec
       SubSequenceSpec
       Paths_chapter11
