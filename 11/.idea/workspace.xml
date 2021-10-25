@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5450b612-e103-4a49-9f08-8071fba664e0" name="Default Changelist" comment="chapter11 - phonetapping">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/app/Main.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cypher.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cypher.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PhoneText.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoneText.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SubSequence.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SubSequence.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/PhoneTextSpec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/PhoneTextSpec.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10/src/Cypher.hs" beforeDir="false" afterPath="$PROJECT_DIR$/../10/src/Cypher.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10/src/Exercises.hs" beforeDir="false" afterPath="$PROJECT_DIR$/../10/src/Exercises.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10/test/CypherSpec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/../10/test/CypherSpec.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10/test/ExercisesSpec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/../10/test/ExercisesSpec.hs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
