@@ -26,12 +26,12 @@ myReverse = foldl (flip(:)) []
 myMap :: (a -> b) -> [a] -> [b]
 myMap f = foldr (\a b -> f(a) : b) []
 
--- 6. myFilter
+-- 6. myFilter (pointless)
 myValid :: (a -> Bool) -> a -> [a] -> [a]
 myValid f a xs = if f a then (:) a xs else xs
 
 myFilter :: (a -> Bool) -> [a] -> [a]
-myFilter f = foldr (myValid f) []
+myFilter = flip foldr [] . myValid
 
 -- 7. squish
 squish :: [[a]] -> [a]
@@ -40,6 +40,10 @@ squish = foldr (++) []
 -- 8. squishMap
 squishMap :: (a -> [b]) -> [a] -> [b]
 squishMap f = foldr (\a b -> f a ++ b) [] 
+
+squishMapPointless :: (a -> [b]) -> [a] -> [b]
+squishMapPointless = flip foldr [] . squisher
+         where squisher f = \a b -> f a ++ b 
 
 squishMap1 :: (a -> [b]) -> [a] -> [b]
 squishMap1 f = squish . myMap f

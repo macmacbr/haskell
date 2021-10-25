@@ -29,11 +29,3 @@ spec = do
     it "should not rotate with key A" $ do
        SUT.rotateCharKey 'M' (SUT.RotCharRes "" (SUT.CharKey "A")) `shouldBe`
                               SUT.RotCharRes "M" (SUT.CharKey "A")
-
-  describe "vigenere" $ do
-    it "should rotate each letter the same ammount and keep symbols" $ do
-      SUT.vigenere (SUT.CharKey "b") "abcd defg" `shouldBe` "bcde efgh"
-
-    it "should get the book example" $ do
-      SUT.vigenere (SUT.CharKey "ALLY") "MEET AT DAWN" `shouldBe` "MPPR AE OYWY"
-

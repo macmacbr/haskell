@@ -60,7 +60,14 @@ spec = do
    
     it "should do a WOOT dance" $ do
       SUT.squishMap (\x -> "WO " ++ [x] ++ " OT ") "blah" `shouldBe` "WO b OT WO l OT WO a OT WO h OT "
-      
+
+  describe "squishMapPointless" $ do
+    it "should map over list and concatenate results from lists" $ do
+      SUT.squishMapPointless (\x -> [1, x, 3]) [2] `shouldBe` [1,2,3]
+
+    it "should do a WOOT dance" $ do
+      SUT.squishMapPointless (\x -> "WO " ++ [x] ++ " OT ") "blah" `shouldBe` "WO b OT WO l OT WO a OT WO h OT "
+
   describe "squishMap1" $ do
     it "should map over list and concatenate results from lists" $ do
       SUT.squishMap1 (\x -> [1, x, 3]) [2] `shouldBe` [1,2,3]
