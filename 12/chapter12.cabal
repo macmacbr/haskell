@@ -26,7 +26,10 @@ source-repository head
 
 library
   exposed-modules:
+      Chapter12
       Lib
+      Libool
+      Naturals
   other-modules:
       Paths_chapter12
   hs-source-dirs:
@@ -51,6 +54,9 @@ test-suite chapter12-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Chapter12Spec
+      LiboolSpec
+      NaturalsSpec
       TodoSpec
       Paths_chapter12
   hs-source-dirs:

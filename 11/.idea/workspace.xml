@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5450b612-e103-4a49-9f08-8071fba664e0" name="Default Changelist" comment="chapter11 - phonetapping" />
+    <list default="true" id="5450b612-e103-4a49-9f08-8071fba664e0" name="Default Changelist" comment="chapter11 - phonetapping">
+      <change afterPath="$PROJECT_DIR$/../12/src/Chapter12.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12/test/Chapter12Spec.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12/chapter12.cabal" beforeDir="false" afterPath="$PROJECT_DIR$/../12/chapter12.cabal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12/src/Lib.hs" beforeDir="false" afterPath="$PROJECT_DIR$/../12/src/Lib.hs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

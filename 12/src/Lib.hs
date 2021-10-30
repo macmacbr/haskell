@@ -7,4 +7,4 @@ loaded :: Bool
 loaded = True  
   
 someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+someFunc = putStrLn "chapter 12. run  stack tests   and edit the code."
