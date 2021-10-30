@@ -63,9 +63,7 @@ spec = do
     it "should get a right value" $ do
       SUT.eitherMaybe' (+1) (Right 2) `shouldBe` Just 3
       SUT.eitherMaybe' (+1) (Left 2) `shouldBe` Nothing
-    
-    
-    
+       
     it "should get a right value applied" $ do
       SUT.eitherMaybe'' (+1) (Right 2) `shouldBe` Just 3
       SUT.eitherMaybe'' (+1) (Left 2) `shouldBe` Nothing      

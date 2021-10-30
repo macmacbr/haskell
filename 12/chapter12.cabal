@@ -30,6 +30,7 @@ library
       Lib
       Libool
       Naturals
+      Unfolds
   other-modules:
       Paths_chapter12
   hs-source-dirs:
@@ -58,6 +59,7 @@ test-suite chapter12-test
       LiboolSpec
       NaturalsSpec
       TodoSpec
+      UnfoldsSpec
       Paths_chapter12
   hs-source-dirs:
       test
