@@ -34,4 +34,44 @@ cantBe mb (Just as) = maybeToMaybeList as mb
 -- sequence that nukes if there's any Nothing in it.
 flipMaybe :: [Maybe a] -> Maybe [a]
 flipMaybe = foldr cantBe (Just [])
-           
+       
+       
+--   EITHER
+type EIS = Either Int String  --for the tests
+
+lefts' :: [Either a b] -> [a]
+lefts' = foldr f []
+   where 
+     f (Right _) as = as
+     f (Left a) as = a : as
+     
+rights' :: [Either a b] -> [b]
+rights' = foldr f []
+   where
+     f (Right a) as = a : as
+     f (Left _) as = as
+     
+partitionEithers' :: [Either a b] -> ([a], [b])
+partitionEithers' = foldr f ([], [])
+   where
+     f (Right b) (as, bs) = (as, b: bs)
+     f (Left a) (as, bs) = (a: as, bs)
+
+eitherMaybe' :: (b -> c)
+             -> Either a b
+             -> Maybe c
+eitherMaybe' _ (Left _) = Nothing
+eitherMaybe' f (Right b) = Just (f b)
+
+either' :: (a -> c)
+        -> (b -> c)
+        -> Either a b
+        -> c
+either' fa _ (Left a) = fa a
+either' _ fb (Right b) = fb b
+
+eitherMaybe'' :: (b -> c)
+              -> Either a b
+              -> Maybe c
+eitherMaybe'' fb = either' (const Nothing) (Just . fb)
+
