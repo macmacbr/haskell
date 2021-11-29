@@ -8,7 +8,7 @@ module Hello
 
 sayHello :: String -> IO ()
 sayHello name = do
-  putStrLn ("hello world" ++ name ++ "!")
+  putStrLn ("hello world " ++ name ++ "!")
 
 concatUserInput = do
   x1 <- getLine

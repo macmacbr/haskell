@@ -47,7 +47,7 @@ gameWords = do
 
 randomWord :: WordList -> IO String
 randomWord (WordList wl) = do
-   randomIndex <- randomRIO (0, (length wl) - 1)
+   randomIndex <- randomRIO (0, length wl - 1)
    return $ wl !! randomIndex
 
 randomWord' :: IO String
@@ -63,7 +63,7 @@ instance Show Puzzle where
        ++ ". Guessed so far (" ++ (show $ length guessed) ++ "): " ++ guessed
 
 freshPuzzle :: String -> Puzzle
-freshPuzzle word = Puzzle word (map (\_ -> Nothing) word) ""
+freshPuzzle word = Puzzle word (map (const Nothing) word) ""
 
 charInWord :: Puzzle -> Char -> Bool
 charInWord (Puzzle word _ _) = flip elem word
