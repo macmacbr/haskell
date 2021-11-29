@@ -14,3 +14,4 @@ main = do
   putStrLn $ "ceaser 13:" ++ caesar 13 text
   putStrLn $ "vigenere:" ++  vigenere (CharKey key) text
 
+
